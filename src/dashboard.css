@@ -1,0 +1,110 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+   
+  }
+
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 14px;
+    min-width: 800px;
+  }
+
+  h2 {
+      text-align: center;
+  }
+  
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #F5F5F5;
+    font-weight: bold;
+  }
+  
+  td {
+    font-weight: normal;
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .pagination-container button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .pagination-container button:hover {
+    background-color: #388e3c;
+  }
+  
+  .pagination-container button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  .pagination-container select {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .pagination-container select:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .pagination-container div {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+.logout-button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+   
+}
+
+.logout-button:hover {
+  background-color: #388e3c;
+}
+
+.pagination-container button[disabled],
+.pagination-container select[disabled] {
+  cursor: not-allowed;
+  background-color: #aaa;
+}
