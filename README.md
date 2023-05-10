@@ -1,8 +1,8 @@
-login credentials 
+## login credentials 
 test@gmail.com
 password: 12345
 
-#Deployment server
+## Deployment server
 
 the application is being hosted by firebase
 https://hamoye-react-9c28d.web.app/
