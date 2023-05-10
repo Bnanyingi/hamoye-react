@@ -6,6 +6,7 @@ import womanLogo from "./images/womanlogo.svg";
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -24,7 +25,7 @@ function Login() {
 
   return (
     <div className="login-page">
-      <h2>Login Page</h2>
+      <h2>Hello Again!!</h2>
       <div className="login">
         <div className="login__image">
           <img src={womanLogo} alt="Logo" />

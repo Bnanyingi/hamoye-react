@@ -92,6 +92,7 @@ table {
     font-size: 1rem;
     border-radius: 0.25rem;
     border: none;
+    width: 200px;
     background-color: #4caf50;
     color: #fff;
     cursor: pointer;

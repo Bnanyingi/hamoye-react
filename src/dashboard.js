@@ -50,9 +50,9 @@ export default function Dashboard() {
     id: flight.icao24 + "_" + index,
     flightNumber: flight.icao24,
     airport: flight.estDepartureAirport,
-    time: new Date(flight.firstSeen).toLocaleTimeString("en-US", options),
-    arriving: flight.arrivalAirportCandidatesCount,
-    departing: flight.departureAirportCandidatesCount,
+    departuretime: new Date(flight.firstSeen).toLocaleTimeString("en-US", options),
+    arrivaltime: new Date(flight.lastSeen).toLocaleTimeString("en-US", options),
+   
   }));
 
   const navigate = useNavigate();
@@ -70,9 +70,8 @@ export default function Dashboard() {
           <thead>
             <tr>
               <th>Airport</th>
-              <th>Time</th>
-              <th>Arriving</th>
-              <th>Departing</th>
+              <th>Departure Time</th>
+              <th>Arrival time</th>
             </tr>
           </thead>
           <tbody>
@@ -80,9 +79,8 @@ export default function Dashboard() {
               flights.map((flight) => (
                 <tr key={flight.id}>
                   <td>{flight.airport}</td>
-                  <td>{flight.time}</td>
-                  <td>{flight.arriving}</td>
-                  <td>{flight.departing}</td>
+                  <td>{flight.departuretime}</td>
+                  <td>{flight.arrivaltime}</td>
                 </tr>
               ))}
           </tbody>
