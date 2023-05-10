@@ -1,5 +1,5 @@
 ## login credentials 
-test@gmail.com
+email: test@gmail.com
 password: 12345
 
 ## Deployment server
